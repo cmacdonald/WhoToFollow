@@ -6,11 +6,8 @@ import {History, Route, Router, Link} from 'react-router';
 import Home from './Home.tsx';
 import QueryResults from './QueryResults.tsx';
 import {AppBar, IconButton, FlatButton} from 'material-ui';
-import * as injectTapEventPlugin from 'react-tap-event-plugin';
 import Props = __React.Props;
 import TwitterUserPreviewPane from "./TwitterUserPreviewPane";
-
-injectTapEventPlugin();
 
 export interface RecentQuery {
     query: string
