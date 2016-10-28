@@ -63,6 +63,6 @@ class TweetStreamSimulator[T: ClassTag] @Inject()
     TweetBatch(statusList.toSeq)
   }
 
-  def gis(s: String) = new GZIPInputStream(new BufferedInputStream(new FileInputStream(s)))
+  def gis(s: String) = if (s.endsWith(".gz")) new GZIPInputStream(new BufferedInputStream(new FileInputStream(s))) else new BufferedInputStream(new FileInputStream(s))
 
 }
