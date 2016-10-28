@@ -6,6 +6,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.10.6"
 
+resolvers += "Local Maven Repository" at "file:///"+Path.userHome+"/.m2/repository"
+
 
 libraryDependencies ++= Seq(
   jdbc,
@@ -21,7 +23,8 @@ libraryDependencies ++= Seq(
   "net.sf.jazzy" % "jazzy" % "0.5.2-rtext-1.4.1-2",
   "org.scalatest" % "scalatest_2.10" % "3.0.0-M15",
   "org.spire-math" %% "jawn-parser" % "0.8.3",
-  "org.spire-math" %% "jawn-ast" % "0.8.3"
+  "org.spire-math" %% "jawn-ast" % "0.8.3",
+  "org.terrier" % "terrier-core" % "4.1"
 )
 
 
