@@ -23,6 +23,14 @@ npm install tsd -g
 npm install gulp-cli -g
 ```
 
+4. Download and install the Maven build of Terrier from http://terrier.org
+
+```
+tar -xvf terrier-core-4.1.tar.gz
+cd terrier-core-4.1
+mvn -DskipTests install
+```
+
 ## Configuration
 
 1.
