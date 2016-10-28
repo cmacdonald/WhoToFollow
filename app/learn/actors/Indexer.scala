@@ -19,6 +19,9 @@ import scala.collection.immutable.HashMap
 object Indexer extends NamedActor {
   final val name = "Indexer"
 
+  System.setProperty("stopwords.filename", (new java.io.File(".").getCanonicalPath)+"/conf/stopwords.txt")
+  System.setProperty("indexer.meta.forward.keys", "username,name,bio")
+  System.setProperty("indexer.meta.forward.keylens", "256,256,1024")
   val index = new MemoryIndex()
   val tokeniser = Tokeniser.getTokeniser
   var docIds = new HashMap[String, Int]()  // TwitterUserId -> TerrierDocId
