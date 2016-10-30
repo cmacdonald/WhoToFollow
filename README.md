@@ -3,6 +3,8 @@ Recommending Twitter users to follow for information about events.
 
 ## Pre-requisites
 
+We have managed to build on Mac or Linux. No one has successfully built upon Windows.  
+
 1. Install Redis. On a Mac with brew, its simply (which also sets it running):
 ```
 brew install redis
