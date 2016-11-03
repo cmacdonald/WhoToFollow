@@ -8,7 +8,7 @@ We have managed to build on Mac or Linux. No one has successfully built upon Win
 1. Install Redis. On a Mac with brew, its simply (which also sets it running):
 ```
 brew install redis
-brew services redis start
+brew services start redis
 ```
 
 2. Install Node.js and sbt. Again, we had a Mac, so used brew.
